@@ -1,0 +1,80 @@
+@-webkit-keyframes csspin {
+  0%    { -webkit-transform: rotate(  0deg); }
+  25%   { -webkit-transform: rotate( 90deg); }
+  50%   { -webkit-transform: rotate(180deg); }
+  75%   { -webkit-transform: rotate(270deg); }
+
+  /* hack so the 270deg -> 360deg jump isn't as noticeable */
+  99.9% { -webkit-transform: rotate(360deg); }
+  100%  { -webkit-transform: rotate(  0deg); }
+}
+
+@-moz-keyframes csspin {
+  0%    { -moz-transform: rotate(  0deg); }
+  25%   { -moz-transform: rotate( 90deg); }
+  50%   { -moz-transform: rotate(180deg); }
+  75%   { -moz-transform: rotate(270deg); }
+
+  /* hack so the 270deg -> 360deg jump isn't as noticeable */
+  99.9% { -moz-transform: rotate(360deg); }
+  100%  { -moz-transform: rotate(  0deg); }
+}
+
+@-ms-keyframes csspin {
+  0%    { -ms-transform: rotate(  0deg); }
+  25%   { -ms-transform: rotate( 90deg); }
+  50%   { -ms-transform: rotate(180deg); }
+  75%   { -ms-transform: rotate(270deg); }
+
+  /* hack so the 270deg -> 360deg jump isn't as noticeable */
+  99.9% { -ms-transform: rotate(360deg); }
+  100%  { -ms-transform: rotate(  0deg); }
+}
+
+@-o-keyframes csspin {
+  0%    { -o-transform: rotate(  0deg); }
+  25%   { -o-transform: rotate( 90deg); }
+  50%   { -o-transform: rotate(180deg); }
+  75%   { -o-transform: rotate(270deg); }
+
+  /* hack so the 270deg -> 360deg jump isn't as noticeable */
+  99.9% { -o-transform: rotate(360deg); }
+  100%  { -o-transform: rotate(  0deg); }
+}
+
+@keyframes csspin {
+  0%    { transform: rotate(  0deg); }
+  25%   { transform: rotate( 90deg); }
+  50%   { transform: rotate(180deg); }
+  75%   { transform: rotate(270deg); }
+
+  /* hack so the 270deg -> 360deg jump isn't as noticeable */
+  99.9% { transform: rotate(360deg); }
+  100%  { transform: rotate(  0deg); }
+}
+
+.csspin {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  border: none;
+
+  -webkit-animation: csspin 2s infinite normal linear;
+  -moz-animation: csspin 2s infinite normal linear;
+  -ms-animation: csspin 2s infinite normal linear;
+  -o-animation: csspin 2s infinite normal linear;
+  animation: csspin 2s infinite normal linear;
+}
+
+.csspinner {
+  width: 10px;
+  height: 10px;
+  background-color: #222;
+  margin: 0px 10px 20px 10px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
